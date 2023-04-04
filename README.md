@@ -1,0 +1,3 @@
+et erit tamquam lignum quod plantatum est secus decursus aquarum quod fructum suum dabit in tempore suo et folium eius non defluet et omnia quaecumque faciet prosperabuntur
+
+det quoque tibi Dominus prudentiam et sensum ut regere possis Israhel et custodire legem Domini Dei tui tunc enim proficere poteris si custodieris mandata et iudicia quae praecepit Dominus Mosi ut doceret Israhel confortare viriliter age ne timeas neque paveas
