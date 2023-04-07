@@ -7,6 +7,7 @@ const App = () => {
 
   const fadeIn = useRef(new Animated.Value(0)).current;
 
+
   useEffect(() => {
   Animated.loop(
   Animated.sequence([
@@ -52,7 +53,7 @@ const App = () => {
               outputRange: ['-10deg', '10deg'],
           });
 
-    const AnimetedImage = Animated.createAnimatedComponent(ImageBackground);
+    const AnimetedImage = Animated.createAnimatedComponent(Image);
 
 
   return (
@@ -69,34 +70,36 @@ const App = () => {
                        resizeMode='contain'
                        style={{transform: [{ scale: 0.39 }], flex: 2}}>
       </ImageBackground>
-      <View style={{flex: 2}}>
+      <View style={{flexDirection: 'row', flex: 2, justifyContent: 'center', alignItems: 'center'}}>
       <ImageBackground source={require('./Graphics/poloillustrations01.png')}
                        resizeMode='contain'
-                       style={{transform: [{ scale: 0.775 }], flex: 2}}>
-         <AnimetedImage
-                       source={require('./Graphics/poloillustrations04.png')}
-                       resizeMode='contain'
-                       style={[{
-                           transform: [
-                               {
-                                 rotate: translateAnimation,
-                               },
-                               { scale: 1.5 }
-                             ], justifyContent: 'center', alignItems: 'center', flex: 2, top: 32
-                       }]}
-                        />
-                  <FadeInView style={{flex: 1, justifyContent: 'center', alignItems: 'center', bottom: 75}}>
+                       style={{transform: [{ scale: 0.3 }], position: 'absolute'}}>
+
+                  <FadeInView>
                        <Image
                         source={require('./Graphics/poloillustrations05.png')}
                         resizeMode='contain'
-                        style={{transform: [{ scale: 0.4 }]}}
+                        style={{transform: [{ scale: 1 }], position: 'absolute'}}
                         />
                   </FadeInView>
+
+                  <AnimetedImage
+                         source={require('./Graphics/poloillustrations04.png')}
+                         resizeMode='contain'
+                         style={[{
+                             transform: [
+                                 {
+                                   rotate: translateAnimation,
+                                 },
+                                 { scale: 1.075 }
+                               ]
+                         }]}
+                          />
       </ImageBackground>
       </View>
     <View style={{flex: 2, alignItems: 'center', justifyContent:'center'}}>
 
-        <Animated.Text style={{top: 20, opacity: fadeIn, fontFamily: 'mulishbold', color: '#CC3333'}}>Загрузка</Animated.Text>
+        <Animated.Text style={{opacity: fadeIn, fontFamily: 'mulishbold', color: '#CC3333'}}>Загрузка</Animated.Text>
     </View>
     </View>
   );

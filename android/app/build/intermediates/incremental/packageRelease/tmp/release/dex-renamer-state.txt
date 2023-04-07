@@ -1,4 +1,4 @@
-#Thu Apr 06 19:20:51 ALMT 2023
+#Fri Apr 07 11:32:26 ALMT 2023
 base.0=D\:\\ThePolo\\PoloApp\\android\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
