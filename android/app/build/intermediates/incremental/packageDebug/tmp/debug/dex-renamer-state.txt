@@ -1,13 +1,16 @@
-#Fri Apr 07 09:57:10 ALMT 2023
-path.3=14/classes.dex
-path.2=12/classes.dex
+#Sat Apr 08 12:28:54 ALMT 2023
+path.4=14/classes.dex
+path.3=12/classes.dex
+path.2=0/classes.dex
 path.1=0/classes.dex
 path.0=classes.dex
-base.3=D\:\\ThePolo\\PoloApp\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\14\\classes.dex
-base.2=D\:\\ThePolo\\PoloApp\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex
-base.1=D\:\\ThePolo\\PoloApp\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.0=D\:\\ThePolo\\PoloApp\\android\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.4=D\:\\diplomMm\\PoloApp\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\14\\classes.dex
+base.3=D\:\\diplomMm\\PoloApp\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex
+base.2=D\:\\diplomMm\\PoloApp\\android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.1=D\:\\diplomMm\\PoloApp\\android\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\0\\classes.dex
+base.0=D\:\\diplomMm\\PoloApp\\android\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
+renamed.4=classes5.dex

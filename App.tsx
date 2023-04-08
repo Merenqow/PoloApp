@@ -1,11 +1,11 @@
 import React, {useEffect, useRef, useState} from 'react';
 import {StyleSheet, View, Image, ImageBackground,
-        ActivityIndicator, Text, Animated, Easing} from 'react-native';
+        Animated, Easing} from 'react-native';
 
 
 const App = () => {
 
-  const fadeIn = useRef(new Animated.Value(0)).current;
+  const fadeIn = useRef(new Animated.Value(0.5)).current;
 
 
   useEffect(() => {
@@ -17,7 +17,7 @@ const App = () => {
         useNativeDriver: true,
       }),
       Animated.timing(fadeIn, {
-            toValue: 0,
+            toValue: 0.5,
             duration: 1000,
             useNativeDriver: true,
           })
@@ -105,7 +105,7 @@ const App = () => {
   );
 };
 
-const FadeInView = props => {
+const FadeInView = (props: any) => {
   const fadeAnim = useRef(new Animated.Value(0)).current;
 
 useEffect(() => {
