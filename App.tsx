@@ -1,7 +1,6 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useEffect, useRef} from 'react';
 import {StyleSheet, View, Image, ImageBackground,
         Animated, Easing} from 'react-native';
-
 
 const App = () => {
 

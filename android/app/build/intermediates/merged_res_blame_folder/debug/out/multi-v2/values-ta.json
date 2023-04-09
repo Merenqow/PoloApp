@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.poloapp-mergeDebugResources-20:/values-ta/values-ta.xml",
+            "outputFile": "com.poloapp-mergeDebugResources-27:/values-ta/values-ta.xml",
             "map": [
                 {
                     "source": "C:\\Users\\poesc\\.gradle\\caches\\transforms-3\\be9a285d7d94d789380b4b7ef5365ae2\\transformed\\appcompat-1.4.1\\res\\values-ta\\values-ta.xml",
