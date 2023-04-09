@@ -4,7 +4,7 @@
             "outputFile": "com.poloapp-mergeDebugResources-27:/values-w360dp-port-v13/values-w360dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\poesc\\.gradle\\caches\\transforms-3\\4af7f0d23266db3f5bdb15fc939a61bd\\transformed\\material-1.1.0\\res\\values-w360dp-port-v13\\values-w360dp-port-v13.xml",
+                    "source": "C:\\Users\\merenkov_r\\.gradle\\caches\\transforms-3\\4af7f0d23266db3f5bdb15fc939a61bd\\transformed\\material-1.1.0\\res\\values-w360dp-port-v13\\values-w360dp-port-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
