@@ -1,21 +1,41 @@
 import React, {useEffect, useRef, useState} from 'react';
 import {StyleSheet, View, Image, ImageBackground,
-        Animated, Easing} from 'react-native';
+        Animated, Easing, Pressable } from 'react-native';
 import { useNavigate } from "react-router-dom";
 import { Button, Text } from 'react-native';
 import Master from "./Master";
+import Registration from "./Register";
 import Sqlite from 'react-native-sqlite-storage';
-import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
-
-import {
-  NavigationContainer,
-  createNavigationContainerRef,
-} from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
+import { useNavigation, NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 const App = () => {
+    const Stack = createNativeStackNavigator();
+
+    return (
+        <NavigationContainer>
+        <Stack.Navigator
+            screenOptions={{
+                header: () => null
+            }}>
+        <Stack.Screen
+        name="Splash"
+        component={ SplashScreen }
+        />
+        <Stack.Screen
+        name="Start"
+        component={ Master }
+        />
+        <Stack.Screen
+        name="Register"
+        component={ Registration }
+        />
+        </Stack.Navigator>
+        </NavigationContainer>
+        );
+};
+
+const SplashScreen = ({navigation}) => {
 
   const fadeIn = useRef(new Animated.Value(0.5)).current;
 
@@ -87,9 +107,6 @@ const App = () => {
           });
 
     const AnimetedImage = Animated.createAnimatedComponent(Image);
-
-    const Stack = createNativeStackNavigator();
-
   return (
     <View
       style={[
@@ -133,13 +150,36 @@ const App = () => {
       </View>
     <View style={{flex: 2, alignItems: 'center', justifyContent:'center'}}>
         {isRegistred ?
-         <Animated.Text style={{opacity: fadeIn, fontFamily: 'mulishbold', color: '#CC3333'}}>Pареган</Animated.Text>
+         <Pressable style={stylesButt.button} onPress={() => navigation.navigate('Start')}>
+                      <Text style={stylesButt.text}>Войти</Text>
+         </Pressable>
          :
-         <Animated.Text style={{opacity: fadeIn, fontFamily: 'mulishbold', color: '#CC3333'}}>Загрузка</Animated.Text>}
+         <Pressable style={stylesButt.button} onPress={() => navigation.navigate('Register')}>
+             <Text style={stylesButt.text}>Зарегистрироваться</Text>
+         </Pressable>
+         }
     </View>
     </View>
   );
 };
+
+const stylesButt = StyleSheet.create({
+  button: {
+    fontFamily: 'mulishbold',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: 12,
+    paddingHorizontal: 22,
+    borderRadius: 10,
+    elevation: 3,
+    backgroundColor: '#3892DF',
+  },
+  text: {
+    fontSize: 14,
+    fontWeight: 'bold',
+    color: 'white',
+  },
+});
 
 
 const FadeInView = (props: any) => {
